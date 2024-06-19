@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 17:38:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/19 20:15:02 by yrodrigu         ###   ########.fr       */
+/*   Created: 2024/06/19 19:53:42 by yrodrigu          #+#    #+#             */
+/*   Updated: 2024/06/19 19:56:37 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
-#include <stdio.h>
 
-
-int main(int argc, char **argv)
+t_list ft_lstnew(void *content)
 {
-	int i = 1;
-	while (i < argc && argc >= 2)
-	{
-		printf("%i\n", ft_atoi(argv[i]));
-		i++;
-	}
-	return (0);
+	t_list	*lst;
+	
+	lst = (t_list *)malloc(sizeof(t_list));
+	if (!lst)
+		return (0);
+	lst->content = content;
+	lst->next = NULL;
+	return (lst);
 }

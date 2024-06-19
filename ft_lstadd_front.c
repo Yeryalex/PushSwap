@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 17:38:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/19 20:15:02 by yrodrigu         ###   ########.fr       */
+/*   Created: 2024/06/19 20:00:12 by yrodrigu          #+#    #+#             */
+/*   Updated: 2024/06/19 20:01:57 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
-#include <stdio.h>
 
-
-int main(int argc, char **argv)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int i = 1;
-	while (i < argc && argc >= 2)
-	{
-		printf("%i\n", ft_atoi(argv[i]));
-		i++;
-	}
-	return (0);
+	new->next = *lst;
+	*lst = new;
 }

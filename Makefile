@@ -6,13 +6,19 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/06/17 18:18:23 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/06/20 16:24:31 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 CFILES = 	 ft_atoi.c\
+		 ft_lstadd_back.c\
+		 ft_lstadd_front.c\
+		 ft_lstnew.c\
+		 ft_stack_numbers.c\
+		 ft_lstlast.c\
+		 print_error.c\
 
 OFILES = $(CFILES:.c=.o)
 

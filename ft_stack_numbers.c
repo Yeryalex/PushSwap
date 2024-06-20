@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 16:02:46 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/20 16:43:21 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/20 17:27:21 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -17,6 +17,9 @@ t_list	*ft_stack_numbers(int argc, char **argv)
 	int	i;
 	int	j;
 
+	stack = NULL;
+	if (argc < 2)
+		print_error();
 	i = 1;
 	while (i < argc)
 	{

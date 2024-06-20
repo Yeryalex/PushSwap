@@ -1,40 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/17 17:49:39 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/20 17:51:08 by yrodrigu         ###   ########.fr       */
+/*   Created: 2024/06/20 17:37:10 by yrodrigu          #+#    #+#             */
+/*   Updated: 2024/06/20 17:38:16 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	ft_atoi(char *str)
+int	ft_isdigit(int c)
 {
-	long long int 	result;
-	int	sign;
-
-	result = 0;
-	sign = 1;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-')
-	{
-		sign = -1;
-		str++;
-	}
-	if (!*str)
-		print_error();
-	while (*str)
-	{
-		if (!ft_isdigit(*str))
-			print_error();
-		result = result * 10 + (*str - 48);
-		str++;
-	}
-	if (result > 2147483647 || result < -2147483648)
-		print_error();
-	return (result * sign);
+	if (c >= 48 && c <= 57)
+		return (1);
+	return (0);
 }

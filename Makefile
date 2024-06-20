@@ -6,7 +6,7 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/06/20 18:55:12 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/06/20 20:39:38 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ CFILES = 	 ft_atoi.c\
 		 print_error.c\
 		 ft_isdigit.c\
 		 ft_numberdup.c\
+		 ft_is_sorted.c\
 
 OFILES = $(CFILES:.c=.o)
 

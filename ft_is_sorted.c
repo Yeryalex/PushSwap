@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_is_sorted.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 17:38:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/20 20:32:37 by yrodrigu         ###   ########.fr       */
+/*   Created: 2024/06/20 20:24:56 by yrodrigu          #+#    #+#             */
+/*   Updated: 2024/06/20 20:30:23 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
-#include <stdio.h>
 
-
-int main(int argc, char **argv)
+int	ft_is_sorted(t_list *lst)
 {
-	t_list	*stack;
+	t_list	*temp;
 
-	stack = ft_stack_numbers(argc, argv);
-	if (ft_numberdup(stack))
-		print_error();
-	if (ft_is_sorted(stack))
-		printf("Stack Already Sorted\n");
-	while (stack)
+	while (lst)
 	{
-		printf("%li\n", stack->number);
-		stack = stack->next;
+		temp = lst->next;
+		while (temp)
+		{
+			if (lst->number > temp->number)
+				return (0);
+			temp = temp->next;
+		}
+		lst = lst->next;
 	}
-	return (0);
+	return (1);
 }

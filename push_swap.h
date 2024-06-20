@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/20 18:55:32 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/20 20:29:22 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ t_list	*ft_stack_numbers(int argc, char **argv);
 void	print_error(void);
 int	ft_isdigit(int c);
 int	ft_numberdup(t_list *lst);
+int	ft_is_sorted(t_list *lst);
 
 #endif

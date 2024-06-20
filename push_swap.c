@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:38:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/20 20:32:37 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/20 20:49:15 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	if (ft_numberdup(stack))
 		print_error();
 	if (ft_is_sorted(stack))
-		printf("Stack Already Sorted\n");
+		return (0);
 	while (stack)
 	{
 		printf("%li\n", stack->number);

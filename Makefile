@@ -6,7 +6,7 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/06/21 16:39:09 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/06/21 20:14:17 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ CFILES = 	 ft_atoi.c\
 		 ft_numberdup.c\
 		 ft_is_sorted.c\
 		 ft_stack_move.c\
+		 ft_stack_push.c\
 
 OFILES = $(CFILES:.c=.o)
 

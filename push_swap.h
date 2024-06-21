@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/21 19:02:48 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/21 20:14:03 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ int	ft_is_sorted(t_list *lst);
 void	ft_swap_a(t_list **lst);
 void	ft_rotate_a(t_list **lst);
 void	ft_rev_rotate_a(t_list **lst);
+void	ft_push_a(t_list **stack_a, t_list **stack_b);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 19:40:36 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/21 20:40:34 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/25 20:43:35 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -16,12 +16,9 @@ t_list	*ft_push_node(t_list **lst)
 	int	value;
 
 	value = (*lst)->number;
-
-	*lst = (*lst)->next;	
+	*lst = (*lst)->next;
 	return (ft_lstnew(value));
 }
-
-
 
 void	ft_push_a(t_list **stack_a, t_list **stack_b)
 {

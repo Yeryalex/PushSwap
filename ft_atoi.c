@@ -6,15 +6,15 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 17:49:39 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/20 17:51:08 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/25 20:54:30 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
 int	ft_atoi(char *str)
 {
-	long long int 	result;
-	int	sign;
+	long long int		result;
+	int			sign;
 
 	result = 0;
 	sign = 1;

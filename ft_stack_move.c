@@ -6,23 +6,10 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:19:34 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/25 20:47:17 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/06/25 21:20:09 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
-
-int	ft_lstsize(t_list *lst)
-{
-	int	counter;
-
-	counter = 0;
-	while (lst)
-	{
-		counter++;
-		lst = lst->next;
-	}
-	return (counter);
-}
 
 void	ft_swap_a(t_list **lst)
 {

@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/08 19:19:50 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/08 20:23:48 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int		ft_isdigit(int c);
 int	ft_lstsize(t_list *lst);
 int		ft_numberdup(t_list *lst);
 int		ft_is_sorted(t_list *lst);
+void	ft_sort_three(t_list **lst);
 void	ft_swap_a(t_list **lst);
 void	ft_rotate_a(t_list **lst);
 void	ft_rev_rotate_a(t_list **lst);

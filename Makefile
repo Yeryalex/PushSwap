@@ -6,7 +6,7 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/07/08 17:37:47 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/07/08 19:19:15 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,11 @@ CFILES = 	 push_swap.c\
 		 print_error.c\
 		 ft_isdigit.c\
 		 ft_numberdup.c\
+		 ft_lstsize.c\
 		 ft_is_sorted.c\
 		 ft_stack_move.c\
 		 ft_stack_push.c\
+		 ft_sorting.c\
 
 OFILES = $(CFILES:.c=.o)
 

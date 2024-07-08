@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_sorting.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/25 21:17:24 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/08 17:42:16 by yrodrigu         ###   ########.fr       */
+/*   Created: 2024/07/08 19:08:44 by yrodrigu          #+#    #+#             */
+/*   Updated: 2024/07/08 19:16:31 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_sorting(t_list **stack)
 {
-	int	counter;
-
-	counter = 0;
-	while (lst)
-	{
-		counter++;
-		lst = lst->next;
-	}
-	return (counter);
+	if (ft_lstsize(*stack) == 2)
+		ft_swap_a(stack);
 }

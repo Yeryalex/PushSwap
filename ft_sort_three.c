@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 18:52:11 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/08 20:40:39 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/08 20:53:04 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -39,6 +39,20 @@ int	ft_max(t_list *lst)
 	return (value);
 }
 
+int	ft_find_index(t_list *stack, int number)
+{
+	int	i;
+
+	i = 0;
+	while (stack->number != number)
+	{
+		i++;
+		stack = stack->next;
+	}
+	stack->index = 0;
+	return (i);
+}
+
 void	ft_sort_three(t_list **stack)
 {
 	if (ft_min(*stack) == (*stack)->number)
@@ -50,6 +64,13 @@ void	ft_sort_three(t_list **stack)
 	{
 		ft_rotate_a(stack);
 		if (!ft_is_sorted(*stack))
+			ft_swap_a(stack);
+	}
+	else
+	{
+		if (ft_find_index(*stack, ft_max(*stack)) == 1)
+			ft_rev_rotate_a(stack);
+		else
 			ft_swap_a(stack);
 	}
 }

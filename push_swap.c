@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:38:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/09 17:01:41 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/09 17:36:57 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	ft_push_a(&stack, &stack_b);
 	ft_push_a(&stack, &stack_b);
 */
-	ft_ss(&stack, &stack_b);
+	ft_rrr(&stack, &stack_b);
 	
         while (stack_b)
         {       

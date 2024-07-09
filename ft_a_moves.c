@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stack_move.c                                    :+:      :+:    :+:   */
+/*   ft_a_moves.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:19:34 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/25 21:20:09 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/09 17:40:45 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-void	ft_swap_a(t_list **lst)
+void	ft_swap_a(t_list **lst, int j)
 {
 	t_list	*temp;
 	t_list	*temp2;
@@ -25,9 +25,11 @@ void	ft_swap_a(t_list **lst)
 	temp2->next = temp;
 	temp->next = temp3;
 	*lst = temp2;
+	if (j == 1)
+		write(1, "sa\n", 3);
 }
 
-void	ft_rotate_a(t_list **lst)
+void	ft_rotate_a(t_list **lst, int j)
 {
 	t_list	*temp;
 
@@ -36,9 +38,11 @@ void	ft_rotate_a(t_list **lst)
 	(*lst)->next = temp;
 	*lst = temp->next;
 	temp->next = NULL;
+	if (j == 1)
+		write(1, "ra\n", 3);
 }
 
-void	ft_rev_rotate_a(t_list **lst)
+void	ft_rev_rotate_a(t_list **lst, int j)
 {
 	t_list	*first;
 	t_list	*last;
@@ -55,4 +59,6 @@ void	ft_rev_rotate_a(t_list **lst)
 	last->next = first;
 	*lst = last;
 	prev_last->next = NULL;
+	if (j == 1)
+		write(1, "rra\n", 4);
 }

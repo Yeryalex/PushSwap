@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/09 16:31:08 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/09 17:46:20 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,17 @@ int	ft_lstsize(t_list *lst);
 int		ft_numberdup(t_list *lst);
 int		ft_is_sorted(t_list *lst);
 void	ft_sort_three(t_list **lst);
-void	ft_swap_a(t_list **lst);
-void	ft_rotate_a(t_list **lst);
-void	ft_rev_rotate_a(t_list **lst);
-void	ft_swap_b(t_list **lst);
-void	ft_rotate_b(t_list **lst);
-void	ft_rev_rotate_b(t_list **lst);
+void	ft_swap_a(t_list **lst, int j);
+void	ft_rotate_a(t_list **lst, int j);
+void	ft_rev_rotate_a(t_list **lst, int j);
+void	ft_swap_b(t_list **lst, int j);
+void	ft_rotate_b(t_list **lst, int j);
+void	ft_rev_rotate_b(t_list **lst, int j);
 void	ft_push_a(t_list **stack_a, t_list **stack_b);
 void	ft_push_b(t_list **stack_a, t_list **stack_b);
 void	ft_ss(t_list **stack_a, t_list **stack_b);
+void	ft_rr(t_list **stack_a, t_list ** stack_b);
+void	ft_rrr(t_list **stack_a, t_list ** stack_b);
 /*void	ft_sorting(t_list **stack);*/
 
 #endif

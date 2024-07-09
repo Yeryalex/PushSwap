@@ -6,14 +6,14 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 19:08:44 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/08 20:59:28 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/09 18:09:22 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-void	ft_stack_till_three()
+void	ft_stack_till_three(t_list **stack_a, t_list **stack_b)
 {
-
+	
 }
 
 t_list	*ft_sort_b(t_list **stack)
@@ -21,7 +21,6 @@ t_list	*ft_sort_b(t_list **stack)
 	t_list	*stack_b;
 
 	stack_b = NULL;
-
 	if (ft_lstsize(*stack) > 3 && !ft_is_sorted(stack))
 		ft_push_b(stack, &stack_b);
 	if (ft_lstsize(*stack) > 3 && !ft_is_sorted(stack))
@@ -38,10 +37,9 @@ void	ft_sorting(t_list **stack)
 	t_list	*stack_b;
 
 	stack_b = NULL;
-
 	if (ft_lstsize(*stack) == 2)
 		ft_swap_a(stack);
-	else 
+	else
 	{
 		stack_b = ft_sort_b(stack);
 	}

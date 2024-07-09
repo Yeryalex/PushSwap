@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 17:49:39 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/06/25 20:54:30 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/09 18:14:25 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -14,7 +14,7 @@
 int	ft_atoi(char *str)
 {
 	long long int		result;
-	int			sign;
+	int					sign;
 
 	result = 0;
 	sign = 1;

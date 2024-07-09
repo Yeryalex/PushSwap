@@ -6,7 +6,7 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/07/08 20:23:17 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/07/09 16:20:45 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ CFILES = 	 push_swap.c\
 		 ft_lstsize.c\
 		 ft_is_sorted.c\
 		 ft_sort_three.c\
-		 ft_stack_move.c\
+		 ft_a_moves.c\
+		 ft_b_moves.c\
 		 ft_stack_push.c\
 		 ft_sorting.c\
 

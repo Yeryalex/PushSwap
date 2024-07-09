@@ -6,7 +6,7 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/07/09 16:20:45 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/07/09 16:30:55 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,9 @@ CFILES = 	 push_swap.c\
 		 ft_sort_three.c\
 		 ft_a_moves.c\
 		 ft_b_moves.c\
+		 ft_move_ab.c\
 		 ft_stack_push.c\
-		 ft_sorting.c\
+#		 ft_sorting.c\#
 
 OFILES = $(CFILES:.c=.o)
 

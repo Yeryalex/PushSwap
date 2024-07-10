@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/09 18:15:43 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/10 17:35:40 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	ft_push_b(t_list **stack_a, t_list **stack_b);
 void	ft_ss(t_list **stack_a, t_list **stack_b);
 void	ft_rr(t_list **stack_a, t_list **stack_b);
 void	ft_rrr(t_list **stack_a, t_list **stack_b);
+int		ft_find_index(t_list *stack, int num);
 /*void	ft_sorting(t_list **stack);*/
 
 #endif

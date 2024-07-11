@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 17:32:11 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/11 16:02:27 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/11 17:40:01 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -26,7 +26,7 @@ int	ft_find_index(t_list *stack, int num)
 
 int	ft_find_place_b(t_list *stack_b, int num)
 {
-	int	i;
+	int		i;
 	t_list	*temp;
 
 	i = 1;
@@ -47,26 +47,25 @@ int	ft_find_place_b(t_list *stack_b, int num)
 	return (i);
 }
 
-int     ft_find_place_a(t_list *stack_a, int num)
+int	ft_find_place_a(t_list *stack_a, int num)
 {
-        int     i;
-        t_list  *temp;
+	int		i;
+	t_list	*temp;
 
-        i = 1;
-        if (num < stack_a->number && num > ft_lstlast(stack_a)->nbr)
-                i = 0;
-        else if (num > ft_max(stack_a) || num < ft_min(stack_a))
-                i = ft_find_index(stack_a, ft_max(stack_a));
-        else
-        {
-                temp = stack_a->next;
-                while (stack_a->number > num || tem->number < num)
-                {
-                        stack_a = stack_a->next;
-                        temp = stack_a->next;
-                        i++;
-                }
-        }
-        return (i);
+	i = 1;
+	if (num < stack_a->number && num > ft_lstlast(stack_a)->nbr)
+		i = 0;
+	else if (num > ft_max(stack_a) || num < ft_min(stack_a))
+		i = ft_find_index(stack_a, ft_max(stack_a));
+	else
+	{
+		temp = stack_a->next;
+		while (stack_a->number > num || tem->number < num)
+		{
+			stack_a = stack_a->next;
+			temp = stack_a->next;
+			i++;
+		}
+	}
+	return (i);
 }
-

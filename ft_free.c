@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/15 20:55:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/15 21:27:05 by yrodrigu         ###   ########.fr       */
+/*   Created: 2024/07/15 20:52:06 by yrodrigu          #+#    #+#             */
+/*   Updated: 2024/07/15 20:54:17 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	main(int argc, char **argv)
+void	ft_free(t_list **lst)
 {
-	t_list	*stack_a;
-	stack_a = ft_stack_numbers(argc, argv);
-	if(!stack_a || ft_numberdup(stack_a))
+	t_list	*tmp;
+
+	if (!lst)
+		return ;
+	while (*lst)
 	{
-	       ft_free(&stack_a);
-	       print_error();
+		temp = (*lst)->next;
+		(*lst)->number = 0;
+		free(*lst);
+		*lst + temp;
 	}
-	if (!ft_is_sorted(stack_a))
-		ft_sorting(&stack_a);
-	ft_free(&stack_a);
-	return (0);
 }

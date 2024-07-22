@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 19:08:44 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/22 19:09:52 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 20:52:44 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -56,6 +56,7 @@ t_list	**ft_sort_a(t_list **stack_a, t_list **stack_b)
 {
 	int		i;
 	t_list	*tmp;
+	
 	while (*stack_b)
 	{
 		tmp = *stack_b;

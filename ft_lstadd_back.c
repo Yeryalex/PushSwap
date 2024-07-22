@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 15:41:24 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/16 18:42:15 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 20:43:19 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -18,8 +18,5 @@ void	ft_lstadd_back(t_list **lst, t_list *node)
 	if (!*lst)
 		*lst = node;
 	else
-	{
-		ft_lstlast(*lst)->next = node;
-		node->next = NULL;
-	}
+		(ft_lstlast(*lst))->next = node;
 }

@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 19:08:44 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/22 20:52:44 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 21:30:07 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -56,7 +56,7 @@ t_list	**ft_sort_a(t_list **stack_a, t_list **stack_b)
 {
 	int		i;
 	t_list	*tmp;
-	
+
 	while (*stack_b)
 	{
 		tmp = *stack_b;
@@ -64,8 +64,8 @@ t_list	**ft_sort_a(t_list **stack_a, t_list **stack_b)
 		while (i >= 0)
 		{
 			if (i == ft_case_rarb_a(*stack_a, *stack_b, tmp->number))
-                                i = ft_apply_rarb(stack_a, stack_b, tmp->number, 'b');
-                     	else if (i == ft_case_rarrb_a(*stack_a, *stack_b, tmp->number))
+				i = ft_apply_rarb(stack_a, stack_b, tmp->number, 'b');
+			else if (i == ft_case_rarrb_a(*stack_a, *stack_b, tmp->number))
 				i = ft_apply_rarrb(stack_a, stack_b, tmp->number, 'b');
 			else if (i == ft_case_rrarrb_a(*stack_a, *stack_b, tmp->number))
 				i = ft_apply_rrarrb(stack_a, stack_b, tmp->number, 'b');

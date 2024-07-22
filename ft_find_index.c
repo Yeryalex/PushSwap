@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 17:32:11 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/22 19:21:36 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 21:18:15 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -21,7 +21,6 @@ int	ft_find_index(t_list *stack, int num)
 		stack = stack->next;
 		i++;
 	}
-	stack->index = 0;
 	return (i);
 }
 

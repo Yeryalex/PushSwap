@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/22 19:37:22 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 21:32:18 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@
 typedef struct s_list
 {
 	long			number;
-	long			index;
 	struct s_list	*next;
-	struct s_list	*prev;
 }			t_list;
 
 int		ft_atoi(char *str);
@@ -64,12 +62,12 @@ int		ft_rotate_type_ab(t_list *stack_a, t_list *stack_b);
 int		ft_rotate_type_ba(t_list *stack_a, t_list *stack_b);
 
 int		ft_case_rarb(t_list *stack_a, t_list *stack_b, int c);
-int		ft_case_rrarrb(t_list *stack_a, t_list *stack_b, int c);
+int		ft_case_rrarrb(t_list *a, t_list *b, int c);
 int		ft_case_rrarb(t_list *stack_a, t_list *stack_b, int c);
 int		ft_case_rarrb(t_list *stack_a, t_list *stack_b, int c);
 
 int		ft_case_rarb_a(t_list *stack_a, t_list *stack_b, int c);
-int		ft_case_rrarrb_a(t_list *stack_a, t_list *stack_b, int c);
+int		ft_case_rrarrb_a(t_list *a, t_list *b, int c);
 int		ft_case_rarrb_a(t_list *stack_a, t_list *stack_b, int c);
 int		ft_case_rrarb_a(t_list *stack_a, t_list *stack_b, int c);
 

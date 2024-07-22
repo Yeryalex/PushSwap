@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 20:55:38 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/15 21:27:05 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 21:28:30 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -14,11 +14,12 @@
 int	main(int argc, char **argv)
 {
 	t_list	*stack_a;
+
 	stack_a = ft_stack_numbers(argc, argv);
-	if(!stack_a || ft_numberdup(stack_a))
+	if (!stack_a || ft_numberdup(stack_a))
 	{
-	       ft_free(&stack_a);
-	       print_error();
+		ft_free(&stack_a);
+		print_error();
 	}
 	if (!ft_is_sorted(stack_a))
 		ft_sorting(&stack_a);

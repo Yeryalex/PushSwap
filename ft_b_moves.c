@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:19:34 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/09 17:42:41 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/16 18:33:32 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -33,13 +33,15 @@ void	ft_rotate_b(t_list **lst, int j)
 {
 	t_list	*temp;
 
+	if (!*lst || !(*lst)->next)
+		return ;
 	temp = *lst;
 	*lst = ft_lstlast(*lst);
 	(*lst)->next = temp;
 	*lst = temp->next;
 	temp->next = NULL;
 	if (j == 1)
-		write(1, "rb\n", 1);
+		write(1, "rb\n", 3);
 }
 
 void	ft_rev_rotate_b(t_list **lst, int j)
@@ -48,6 +50,8 @@ void	ft_rev_rotate_b(t_list **lst, int j)
 	t_list	*last;
 	t_list	*prev_last;
 
+	if (!*lst || !(*lst)->next)
+		return ;
 	first = *lst;
 	last = *lst;
 	prev_last = NULL;

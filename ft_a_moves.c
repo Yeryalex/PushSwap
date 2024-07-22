@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:19:34 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/09 17:40:45 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 17:51:09 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -33,6 +33,8 @@ void	ft_rotate_a(t_list **lst, int j)
 {
 	t_list	*temp;
 
+	if (!*lst || !(*lst)->next)
+		return ;
 	temp = *lst;
 	*lst = ft_lstlast(*lst);
 	(*lst)->next = temp;
@@ -44,10 +46,33 @@ void	ft_rotate_a(t_list **lst, int j)
 
 void	ft_rev_rotate_a(t_list **lst, int j)
 {
-	t_list	*first;
+	t_list	*tmp;
+	int		i;
+
+	if (!*lst|| !(*lst)->next)
+		return ;
+	i = 0;
+	tmp = *lst;
+	while ((*lst)->next)
+	{
+		*lst = (*lst)->next;
+		i++;
+	}
+	(*lst)->next = tmp;
+	while (i > 1)
+	{
+		tmp = tmp->next;
+		i--;
+	}
+	tmp->next = NULL;
+	if (j == 1)
+		write(1, "rra\n", 4);
+/*	t_list	*first;
 	t_list	*last;
 	t_list	*prev_last;
 
+	if (!*lst || !(*lst)->next)
+		return ;
 	first = *lst;
 	last = *lst;
 	prev_last = NULL;
@@ -61,4 +86,4 @@ void	ft_rev_rotate_a(t_list **lst, int j)
 	prev_last->next = NULL;
 	if (j == 1)
 		write(1, "rra\n", 4);
-}
+*/}

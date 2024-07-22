@@ -6,7 +6,7 @@
 /*   By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 18:00:41 by yrodrigu          #+#    #+#             */
-/*   Updated: 2024/07/15 22:06:56 by yrodrigu         ###   ########.fr       */
+/*   Updated: 2024/07/22 19:37:22 by yrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef struct s_list
 	long			number;
 	long			index;
 	struct s_list	*next;
+	struct s_list	*prev;
 }			t_list;
 
 int		ft_atoi(char *str);
@@ -44,13 +45,14 @@ void	ft_rotate_b(t_list **lst, int j);
 void	ft_rev_rotate_b(t_list **lst, int j);
 void	ft_push_a(t_list **stack_a, t_list **stack_b);
 void	ft_push_b(t_list **stack_a, t_list **stack_b);
-void	ft_ss(t_list **stack_a, t_list **stack_b);
-void	ft_rr(t_list **stack_a, t_list **stack_b);
-void	ft_rrr(t_list **stack_a, t_list **stack_b);
+void	ft_ss(t_list **a, t_list **b);
+void	ft_rr(t_list **a, t_list **b);
+void	ft_rrr(t_list **a, t_list **b);
 int		ft_find_index(t_list *stack, int num);
 int		ft_min(t_list *lst);
 int		ft_max(t_list *lst);
-void	ft_sorting(t_list **stack);
+int		ft_isdigit(int c);
+void	ft_sorting(t_list **stack_a);
 t_list	**ft_sort_a(t_list **stack_a, t_list **stack_b);
 t_list	*ft_sort_b(t_list **stack);
 void	ft_stack_till_three(t_list **stack_a, t_list **stack_b);

@@ -6,11 +6,11 @@
 #    By: yrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 18:02:07 by yrodrigu          #+#    #+#              #
-#    Updated: 2024/07/15 21:24:09 by yrodrigu         ###   ########.fr        #
+#    Updated: 2024/07/23 16:36:16 by yrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 CFILES = 	 push_swap.c\
 		 ft_atoi.c\
@@ -47,7 +47,7 @@ $(NAME): $(OFILES)
 	$(CC) $(CFLAGS) $(OFILES) -o $(NAME)
 
 
-%.o: %.c 
+%.o: %.c push_swap.h 
 	$(CC) $(CFLAGS) -c $<
 
 clean:
